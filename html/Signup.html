@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+    <title> Login </title>
+
+    <link rel="stylesheet" href="../css/LoginSignup.css" />
+
+</head>
+
+<body>
+    <center><img src="../images/logo1.png" / align="middle">
+    </center>
+    <div class="container">
+        <div class="main">
+            <h2>SIGN UP</h2>
+            <form method="post" onsubmit="return validate()" action="../php/Signup.php">
+                <label>Username:</label>
+                <input type="text" name='usrName' id="userName">
+                <label>Password:</label>
+                <input type="password" name='passWd' id="passWord">
+                <label>Re-enter Password:</label>
+                <input type="password" id="checkPassWord">
+                <br/>
+                <br/>
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function validate() {
+        var pass1 = document.getElementById("passWord").value;
+        var pass2 = document.getElementById("checkPassWord").value;
+        
+    
+        if (pass1 != pass2) {
+            alert("Passwords Do not match");
+            return false;
+        }
+        else {
+            alert("Passwords Match!!!");
+        }
+    
+        return true;
+    }
+</script>

@@ -1,0 +1,363 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.menu-collapsed {
+    transition: all .25s;
+    position: fixed;
+    top: 10px;
+    left: 9px;
+    height: 36px;
+    width: 36px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.menu-collapsed ul {
+    transition: all .05s;
+    position: fixed;
+    left: -9000px;
+}
+
+.bar {
+    position: fixed;
+    left: 12px;
+    top: 24px;
+    height: 6px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.bar:before {
+    transition: all .25s;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -8px;
+    height: 6px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.bar:after {
+    transition: all .25s;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    height: 6px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.menu-expanded {
+    transition: all .25s;
+    text-align: center;
+    line-height: 100px;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.menu-expanded ul {
+    transition: all .05s;
+    position: relative;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-expanded a {
+    transition: all .15s;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    padding: 3px;
+}
+
+.menu-expanded a:hover {
+    transition: all .15s;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.menu-expanded .bar {
+    background-color: transparent;
+    transition: all .25s;
+}
+
+.menu-expanded .bar:before {
+    transition: all .25s;
+    content: "";
+    transform: rotate(45deg);
+    top: -0px;
+}
+
+.menu-expanded .bar:after {
+    transition: all .25s;
+    content: "";
+    transform: rotate(-45deg);
+    top: 0px;
+}
+
+h1 {
+    font-size: 4em;
+    color: powderblue;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    line-height: 180px;
+}
+
+#poll {
+    background: white;
+    float: right;
+    border: 2px solid white;
+    width: 500px;
+    height: 120px;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#left_holder {
+    height: 100%;
+    width: 5%;
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-top: 51.5px;
+}
+
+#right_holder {
+    height: 100%;
+    width: 5%;
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 51.5px;
+}
+
+.leftIcon {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.rightIcon {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+html {
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+}
+
+legend,
+td,
+#radio1,
+#radio2,
+#radio3,
+#radio4,
+#radio5 {
+    color: aliceblue;
+}
+
+#table {
+    font-family: cursive;
+    margin-left: 200px;
+    border: 1px;
+    border-color: aliceblue;
+}
+
+legend {
+    font-size: 75px;
+    font-family: sans-serif;
+    margin-left: 150px;
+}
+
+#radio1,
+#radio2,
+#radio3,
+#radio4,
+#radio5 {
+    margin-left: 250px;
+}
+
+#googleMap {
+    margin-left: 200px;
+}
+
+input[type=submit],
+input[type=button],
+input[type=reset] {
+    font-size: 16px;
+    background: red;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+    outline: none;
+}
+
+#submit1 {
+    width: 150px;
+}
+
+#submit2 {
+    width: 200px;
+    margin-left: 1100px;
+}
+
+hr {
+    margin-left: 150px;
+}
+
+small {
+    font-family: sans-serif;
+    color: antiquewhite;
+}
+
+footer {
+    margin-left: 150px;
+}
+
+#logo {
+    margin-top: -50px;
+    margin-left: 1320px;
+    height: 0px;
+    border: auto;
+    position: absolute;
+    background-color: black;
+}
+
+#poll {
+    border: 1px;
+    margin-left: 530px;
+    background: transparent;
+    font-family: cursive;
+    font-size: 18px;
+    float: righ;
+    color: aliceblue;
+    margin-top: -300px;
+}
+
+#options {
+    margin-left: 100px;
+    position: relative;
+}
+
+#options a {
+    display: block;
+    padding: 1px;
+}
+
+#options ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+
+#options li {
+    float: left;
+}
+
+#options li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+#options li a:hover {
+    background-color: red;
+}
+
+#personalDetail h2 {
+    margin-left: 150px;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+#personalDetail li {
+    margin-left: 200px;
+}
+
+#personalDetail hr {
+    margin-left: -150px;
+}
+
+#personalDetail footer {
+    margin-right: 50px;
+}
+#Start{
+    font-family: cursive;
+    font-size: 20px;
+    margin-left: 150px;
+    color: floralwhite;
+}
+#Start h3{
+    font-family: cursive;
+    font-size: 30px;
+    color: powderblue;
+}
+#Start hr{
+    margin-left: -10px;
+}
+#Start p{
+    margin-left: 75px;
+}
+#para{
+    font-family: cursive;
+    font-size: 20px;
+    margin-left: 200px;
+    color: floralwhite;
+}
+#para h3{
+    font-size: 40px;
+    color: aqua;
+}
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    color: chartreuse;
+}
+#img12 {
+    margin-left: 450px;
+}

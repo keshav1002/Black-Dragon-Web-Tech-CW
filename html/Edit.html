@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit your account</title>
+    <link rel="stylesheet" href="../css/LoginSignup.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h2>Edit the Account</h2>
+            <form method="get" onsubmit="return validate()" action="../php/Edit.php">
+                <label> New Password:</label> &nbsp &nbsp
+                <input type="password" name='passWd' id="passWord">
+                <br/>
+                <br/>
+                <label>Re-enter New Password: </label> &nbsp &nbsp
+                <input type="password" id="checkPassWord">
+                <br/>
+                <br/>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <hr/>
+    <footer>
+        <p><small> Last Modified Date : 22.04.2016</small>
+        </p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    function validate() {
+        var pass1 = document.getElementById("passWord").value;
+        var pass2 = document.getElementById("checkPassWord").value;
+        
+    
+        if (pass1 != pass2) {
+            alert("Passwords Do not match");
+            return false;
+        }
+        else {
+            alert("Passwords Match!!!");
+        }
+    
+        return true;
+    }
+</script>

@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+    <title> Login </title>
+
+    <link rel="stylesheet" href="../css/LoginSignup.css" />
+
+</head>
+
+<body>
+    <center><img src="../images/logo1.png" / align="middle">
+    </center>
+    <div class="container">
+        <div class="main">
+            <h2>LOGIN</h2>
+
+            <form id="form1" method="post" action="../php/Login.php" onsubmit="return validate()">
+                <label>User Name :</label>
+                <input type="text" name='usrName' id="username" />
+                <label>Password :</label>
+                <input type="password" name='passWd' id="password" />
+                <input type="submit" value="Login" id="submit" />
+                <br/>
+                <br/>
+                <input type="button" value="Sign Up" id="submit" onclick="location.href='Signup.html';">
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function validate(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        
+        if ( username == "" && password == ""){
+            alert ("Please fill in the Login Details!!"); 
+            return false;
+        }
+    }
+</script>
